@@ -46,6 +46,8 @@ export function ExJSONReplace(key: string, value: any): JSONValue | any[] {
                 return value.toISOString()
             } else if (Object.keys(value).length !== 0) {
                 return value
+            } else {
+                return undefined
             }
         default:
             return undefined
